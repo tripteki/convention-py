@@ -1,0 +1,17 @@
+name: Convention.py
+
+on: push
+
+jobs:
+  cd:
+    runs-on: ubuntu-latest
+    steps:
+      - name: cd
+        uses: tripteki/cd-package@1.0.0
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          repotoken: ${{ secrets.REPOSITORY_TOKEN }}
+          repouser: __token__
+          repository: https://upload.pypi.org/legacy/
+          language: py
+          artifact: pyproject.toml
