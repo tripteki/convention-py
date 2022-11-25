@@ -8,7 +8,7 @@ Getting Started
 Installation :
 
 ```
-$ pip install tripteki-pylint
+$ python3 -m pip install --user tripteki-pylint
 ```
 
 How to use :
@@ -22,7 +22,7 @@ tripteki-pylint
 Usage
 ---
 
-`pylint --recursive=y .`
+`python3 -m pylint --recursive=y .`
 
 Author
 ---
